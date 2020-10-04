@@ -12,12 +12,13 @@
     <section>
         <article>
             <form id="survey-form" action="">
-                <label id="name-label" for="name">Name</label><br>
-                <input type="text" id="name" placeholder="Place Name"><br>
+                <label id="name-label" for="name" >Name</label><br>
+                <input type="text" id="name" placeholder="Place Name" required><br>
                 <label id="email-label" for="email">email</label><br>
-                <input type="text" id="email" placeholder="place Email"><label><--add html5 validation</label><br>
+                <input type="email" id="email" placeholder="place Email"><label><--add html5 validation</label><br>
                 <label id="number-label" for="number">number</label><br>
-                <input type="text" id="number" placeholder="place number"><label><--add html5 validation || validation needs to be based on min/max range number</label><br>
+                <input type="number" id="number" placeholder="place number" min="13" max="117"><label><--add html5 validation || validation needs to be based on min/max range number</label><br>
+                <textarea name="" id="" cols="30" rows="10"></textarea><br>
                 <button id="submit" type="submit">Submit your answers</button>
                 
                 
@@ -27,13 +28,13 @@
 
         </article>
         <article>
-            <p id="description"></p>
+            <p id="description">short explanation</p>
         </article>
     </section>
     <footer>
 
     </footer>
-    <script src=""></script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     
 </body>
 </html>
