@@ -4,12 +4,35 @@
     background-image: url("../images/clear-sky.jpg");
 
 }
+#sky-wrapper {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-auto-rows: 50px;
+    gap: 0.1em;
+}
 #ground{
     display: grid;
     height: 500px;
     background-image: url("../images/");
     background-color: rgb(31, 90, 31);
 }
+#ground-wrapper{
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-auto-rows: 50px;
+    gap: 0.1em;
+}
+
 #aproved-form {
     display: none;
+}
+
+
+
+
+.stars {
+    border: solid 0.5px rgb(85, 85, 85);
+}
+.ground-stuff{
+    border: solid 0.5px rgb(18, 16, 77);
 }
