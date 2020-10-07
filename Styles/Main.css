@@ -1,8 +1,15 @@
 #sky {
     display: grid;
-    background-image: url(images/);
+    height: 50%;
+    background-image: url("../images/clear-sky.jpg");
 
 }
 #ground{
     display: grid;
+    height: 500px;
+    background-image: url("../images/");
+    background-color: rgb(31, 90, 31);
+}
+#aproved-form {
+    display: none;
 }
