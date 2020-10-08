@@ -7,7 +7,7 @@
 #sky-wrapper {
     display: grid;
     grid-template-columns: repeat(8, auto);
-    grid-auto-rows: auto;
+    grid-auto-rows: 50px;
     gap: 0.1em;
 }
 #ground{
@@ -42,4 +42,13 @@
     0%   {transform: scale(1) rotate(0deg);}
     50% {transform: scale(0.5) rotate(180deg);}
     100% {transform: scale(1) rotate(360deg);}
+}
+.star-reverse {
+    animation:star-rotate-reverse 10s infinite linear;
+}
+
+@keyframes star-rotate-reverse {
+    0%   {transform: scale(1) rotate(360deg);}
+    50% {transform: scale(0.5) rotate(180deg);}
+    100% {transform: scale(1) rotate(0deg);}
 }
