@@ -1,18 +1,18 @@
 #sky {
     display: grid;
-    height: 50%;
+    height: auto;
     background-image: url("../images/clear-sky.jpg");
 
 }
 #sky-wrapper {
     display: grid;
-    grid-template-columns: repeat(10, 1fr);
-    grid-auto-rows: 50px;
+    grid-template-columns: repeat(8, auto);
+    grid-auto-rows: auto;
     gap: 0.1em;
 }
 #ground{
     display: grid;
-    height: 500px;
+    height: auto;
     background-image: url("../images/");
     background-color: rgb(31, 90, 31);
 }
@@ -27,12 +27,19 @@
     display: none;
 }
 
-
-
-
-.stars {
+.stars-placer {
     border: solid 0.5px rgb(85, 85, 85);
 }
-.ground-stuff{
+.ground-placer {
     border: solid 0.5px rgb(18, 16, 77);
+}
+.star {
+    animation:star-rotate 12s infinite linear;
+    /* animation:star-reshape 10s ease-in-out infinite; */
+}
+
+@keyframes star-rotate {
+    0%   {transform: scale(1) rotate(0deg);}
+    50% {transform: scale(0.5) rotate(180deg);}
+    100% {transform: scale(1) rotate(360deg);}
 }
