@@ -43,6 +43,9 @@
 .star-reverse {
     animation:star-rotate-reverse 10s infinite linear;
 }
+.displayNone{
+    display: none;
+}
 
 @keyframes star-rotate {
     0%   {transform: scale(1) rotate(0deg);}
